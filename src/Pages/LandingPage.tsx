@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Scissors, Shirt, Sparkles, WandSparkles } from "lucide-react";
 import TopBar from "@/components/ui/TopBar";
-import Footer from "@/components/ui/Footer";
+import { Footer, FooterLink, FooterLinkGroup, FooterCopyright } from 'flowbite-react';
+
 
 export default function LandingPage() {
   useEffect(() => {
@@ -46,6 +47,13 @@ export default function LandingPage() {
           ))}
         </div>
       </section>
+
+    <Footer className="bg-pink-200 text-white mt-30" container style={{ backgroundColor: "#fbcfe8" }}>
+    <FooterCopyright 
+        href="https://github.com/Christopher-Moreira" by="Christopher Moreira de Oliveira™" year={new Date().getFullYear()} className="text-white"
+    />
+    </Footer>
     </div>
+    
   );
 }
