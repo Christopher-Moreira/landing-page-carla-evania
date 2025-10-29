@@ -2,8 +2,7 @@ import React, { useEffect } from "react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Scissors, Shirt, Sparkles, WandSparkles } from "lucide-react";
 import TopBar from "@/components/ui/TopBar";
-import { Footer, FooterLink, FooterLinkGroup, FooterCopyright } from 'flowbite-react';
-
+import { Footer, FooterCopyright } from 'flowbite-react';
 
 export default function LandingPage() {
   useEffect(() => {
@@ -18,11 +17,11 @@ export default function LandingPage() {
   ];
 
   return (
-    <div className="font-sans bg-pink-200 text-gray-900 h-screen flex flex-col overflow-hidden">
+    <div className="font-sans bg-pink-200 text-gray-900 flex flex-col min-h-screen overflow-x-hidden">
       <TopBar />
-      <div className="h-18"></div>
+      <div className="h-24"></div>
 
-     <section id="servicos" className="py-0 bg-pink-200 px-4 text-center w-full">
+      <section id="servicos" className="py-8 bg-pink-200 px-4 text-center w-full">
         <div className="flex justify-center mb-8">
           <img 
             src="/logo.jpg" 
@@ -31,29 +30,31 @@ export default function LandingPage() {
           />
         </div>
         
-        <h2 className="text-5xl font-bold text-pink-900 mb-12">Serviços Oferecidos</h2>
+        <h2 className="text-5xl great-vibes-regular text-pink-900 mb-12">Serviços Oferecidos</h2>
 
-        <div className="grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-1 grid-cols-1 gap-8 max-w-7x1 mx-auto">
-          {servicos.map((s, i) => (
-            <Card key={i} className="rounded-1x1 border-2 border-pink-300 hover:shadow-2xl transition transform hover:scale-[1.02] bg-white/90 h-full flex flex-col">
-              <CardHeader className="flex-1">
-                <div className="flex flex-col items-center">{s.icon}</div>
-                <CardTitle className="text-xl text-pink-800">{s.title}</CardTitle>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+          {servicos.map((info, i) => (
+            <Card key={i} className="rounded-xl border-2 border-pink-300 hover:shadow-2xl transition transform hover:scale-[1.02] bg-white/90 h-full flex flex-col">
+              <CardHeader className="flex-1 flex flex-col items-center">
+                {info.icon}
+                <CardTitle className="text-xl text-pink-800">{info.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-700 text-sm">{s.desc}</p>
+                <p className="text-gray-700 text-sm">{info.desc}</p>
               </CardContent>
             </Card>
           ))}
         </div>
       </section>
 
-    <Footer className="bg-pink-200 text-white mt-30" container style={{ backgroundColor: "#fbcfe8" }}>
-    <FooterCopyright 
-        href="https://github.com/Christopher-Moreira" by="Christopher Moreira de Oliveira™" year={new Date().getFullYear()} className="text-white"
-    />
-    </Footer>
+      <Footer className="bg-pink-200 mt-10" container style={{ backgroundColor: "#fbcfe8" }}>
+        <FooterCopyright 
+            href="https://github.com/Christopher-Moreira" 
+            by="Christopher Moreira de Oliveira™" 
+            year={new Date().getFullYear()} 
+            className="text-pink-800"
+        />
+      </Footer>
     </div>
-    
   );
 }
