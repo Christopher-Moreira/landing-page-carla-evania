@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Instagram, Facebook, MessageCircleMore} from "lucide-react";
-import TopBar from "@/components/ui/topbar";
+import TopBar from "@components/topbar";
 import { Footer, FooterCopyright } from 'flowbite-react';
 
 export default function SocialLandingPage() {
