@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Scissors, Shirt, Sparkles, WandSparkles } from "lucide-react";
-import TopBar from "@/components/ui/TopBar";
+import TopBar from "@/components/ui/topbar";
 import { Footer, FooterCopyright } from 'flowbite-react';
 
 export default function LandingPage() {

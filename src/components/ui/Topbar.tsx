@@ -1,4 +1,3 @@
-import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -16,7 +15,7 @@ export default function TopBar() {
 
         <nav className="hidden md:flex flex-1 justify-center items-center gap-6">
           <Button asChild variant="ghost" className="text-pink-800 hover:text-pink-900 hover:bg-pink-300/50">
-            <Link to="/">Lading Page</Link>
+            <Link to="/">Início</Link>
           </Button>
           <Button asChild variant="ghost" className="text-pink-800 hover:text-pink-900 hover:bg-pink-300/50">
            <Link to="/sobre">Sobre Mim</Link>
