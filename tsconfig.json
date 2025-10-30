@@ -17,8 +17,8 @@
     "strictNullChecks": false,
     "baseUrl": "./src",
     "paths": {
-      "@": ["./"],
-
+      "@components/": ["components/"],
+      "@ui/": ["components/ui/"]
     }
   }
 }

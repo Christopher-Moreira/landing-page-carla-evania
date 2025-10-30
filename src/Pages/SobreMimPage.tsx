@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import { Card, CardHeader, CardTitle, CardContent } from "@components/card";
+import { Card, CardHeader, CardTitle, CardContent } from "@components/ui/card";
 import { User, Heart, Star, Globe } from "lucide-react";
-import {TopBar} from "src/components/ui/topbar";
+import {TopBar} from "@components/ui/topbar";
 import { Footer, FooterCopyright } from 'flowbite-react';
 
 
