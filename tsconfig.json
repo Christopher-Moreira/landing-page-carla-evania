@@ -9,6 +9,12 @@
     }
   ],
   "compilerOptions": {
+    "noImplicitAny": false,
+    "noUnusedParameters": false,
+    "skipLibCheck": true,
+    "allowJs": true,
+    "noUnusedLocals": false,
+    "strictNullChecks": false,
     "baseUrl": "./src",
     "paths": {
       "@": ["./"],
