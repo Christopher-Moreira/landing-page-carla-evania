@@ -27,7 +27,7 @@ useEffect(() => {
       <section id="sobre-mim" className="py-12 bg-pink-200 px-4 text-center w-full">
         <div className="flex justify-center mb-8">
           <Image 
-            src="/perfil.jpg" alt="Foto Perfil" width={48} height={48} className="rounded-2xl border-4 border-pink-300 shadow-lg w-48 h-48 object-cover"/>
+            src="/perfil.jpg" alt="Foto Perfil" width={1080} height={1920} className="rounded-2xl border-4 border-pink-300 shadow-lg w-48 h-48 object-cover"/>
         </div>
 
         <h2 className="great-vibes-regular text-5xl font-bold text-pink-900 mb-2">Sobre Mim</h2>

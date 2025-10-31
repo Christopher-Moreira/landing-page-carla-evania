@@ -16,19 +16,16 @@ export default function SocialLandingPage() {
   const redesSociais = [
     { icon: <Instagram className="w-12 h-12 text-red-700 mb-4" />, title: "Instagram", desc: "Siga meu perfil para novidades e fotos exclusivas.", link: "https://www.instagram.com/carlamoreira7792052/" },
     { icon: <MessageCircleMore className="w-12 h-12 text-green-400 mb-4" />, title: "Whatsapp", desc: "Agendamentos Gerais são pelo meu whatsapp.", link: "https://wa.me/5555996991914" },
-    { icon: <Facebook className="w-12 h-12 text-blue-700 mb-4" />, title: "Facebook", desc: "Contato pelo facebook também é aceito!!", link: "https://facebook.com/" },
+    { icon: <Facebook className="w-12 h-12 text-blue-700 mb-4" />, title: "Facebook", desc: "Contato pelo facebook também é aceito!", link: "https://facebook.com/" },
   ];
 
   return (
     <Layout>
-      <div className="h-24"></div>
+      <div className="h-4"></div>
 
       <section id="redes-sociais" className="py-12 font-semibold bg-pink-200 px-4 text-center w-full">
         <div className="flex justify-center mb-8">
-          <img 
-            src="/logo.jpg" 
-            alt="Logo" 
-            className="rounded-2xl border-4 border-pink-300 shadow-lg w-48 h-48 object-cover"
+          <Image src="/logo.jpg" alt="Logo" width={1080} height={1920} className="rounded-2xl border-4 border-pink-300 shadow-lg w-48 h-48 object-cover"
           />
         </div>
 
