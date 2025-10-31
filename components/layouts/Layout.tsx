@@ -25,7 +25,7 @@ export default function Layout({ children }: LayoutProps) {
           </div>
 
           {/* Navegação */}
-          <nav className="hidden md:flex flex-1 justify-center items-center gap-4" style={{ fontFamily: "Roboto, sans-serif" }}>
+          <nav className="hidden md:flex flex-[0.85] justify-center items-center gap-4" style={{ fontFamily: "Roboto, sans-serif" }}>
             <Button asChild variant="ghost" className="text-pink-800 hover:text-pink-900 hover:bg-pink-300/50">
               <Link href="/">Início</Link>
             </Button>

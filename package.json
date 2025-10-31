@@ -11,6 +11,7 @@
   "dependencies": {
     "@fontsource/great-vibes": "^5.2.8",
     "@fontsource/roboto": "^5.2.8",
+    "@fontsource/source-code-pro": "^5.2.7",
     "@radix-ui/react-menubar": "^1.1.16",
     "@radix-ui/react-navigation-menu": "^1.2.14",
     "class-variance-authority": "^0.7.1",

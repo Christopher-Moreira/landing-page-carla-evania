@@ -5,6 +5,7 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Scissors, Shirt, Sparkles, WandSparkles } from "lucide-react";
 import Layout from "@/components/layouts/Layout";
 import "@fontsource/roboto";
+import "@fontsource/source-code-pro"
 
 export default function LandingPage() {
   useEffect(() => {
@@ -42,10 +43,10 @@ export default function LandingPage() {
               className="rounded-xl border-2 border-pink-300 hover:shadow-2xl transition transform hover:scale-[1.02] bg-white/90 h-full flex flex-col">
               <CardHeader className="flex-1 flex flex-col items-center">
                 {info.icon}
-                <CardTitle className="text-x1 text-pink-800" style={{ fontFamily: "Roboto, sans-serif" }}>{info.title}</CardTitle>
+                <CardTitle className="text-x1 text-pink-800" style={{ fontFamily: "Roboto" }}>{info.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-700 text-sm " style={{ fontFamily: "Roboto, sans-serif" }}>{info.desc}</p>
+                <p className="text-gray-700 text-sm " style={{ fontFamily: "Roboto" }}>{info.desc}</p>
               </CardContent>
             </Card>
           ))}
