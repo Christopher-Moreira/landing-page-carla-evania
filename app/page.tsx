@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect } from "react";
+import Image from "next/image";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Scissors, Shirt, Sparkles, WandSparkles } from "lucide-react";
 import Layout from "@/components/layouts/Layout";
@@ -21,18 +22,12 @@ export default function LandingPage() {
 
   return (
     <Layout>
-      <div className="h-12"></div> 
-
+      <div className="h-4"></div> 
       <section id="servicos" className="py-8 bg-pink-200 px-4 text-center w-full">
         <div className="flex justify-center mb-8">
-          <img
-            src="/logo.jpg"
-            alt="Logo Carla Evania"
-            className="rounded-2xl border-4 border-pink-300 shadow-lg w-48 h-48 object-cover" 
-          />
+          <Image src="/logo.jpg" alt="Logo Carla Evania" width={1080} height={1920} className="rounded-2xl border-4 border-pink-300 shadow-lg w-48 h-48 object-cover" />
         </div>
-
-        <h2 className="text-5xl great-vibes-regular text-pink-900 mb-12">
+        <h2 className="text-5xl great-vibes-regular font-semibold text-pink-900 mb-12 px-4 bg-pink-200">
           Serviços Oferecidos
         </h2>
 

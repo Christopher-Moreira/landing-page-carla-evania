@@ -5,6 +5,8 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import "@fontsource/roboto";
 import "@fontsource/great-vibes"
+import Image from "next/image"
+
 interface LayoutProps {
   children: React.ReactNode
 }
@@ -18,22 +20,22 @@ export default function Layout({ children }: LayoutProps) {
 
           {/* Logo e Nome */}
           <div className="flex items-center gap-2 flex-shrink-0">
-            <img src="/maquina.png" alt="Máquina de Costura" className="w-12 h-12" />
+            <Image src="/maquina.png" alt="Máquina de Costura" width={48} height={48} className="w-12 h-12" />
             <span className="great-vibes-regular text-3xl text-pink-800">
               Carla Evania Estilista
             </span>
           </div>
 
           {/* Navegação */}
-          <nav className="hidden md:flex flex-[0.85] justify-center items-center gap-4" style={{ fontFamily: "Roboto, sans-serif" }}>
+          <nav className="hidden md:flex flex-[0.875] justify-center items-center gap-4" style={{ fontFamily: "Roboto, sans-serif" }}>
             <Button asChild variant="ghost" className="text-pink-800 hover:text-pink-900 hover:bg-pink-300/50">
               <Link href="/">Início</Link>
             </Button>
             <Button asChild variant="ghost" className="text-pink-800 hover:text-pink-900 hover:bg-pink-300/50">
-              <Link href="/sobre">Sobre Mim</Link>
+              <Link href="/pages/about-me">Sobre Mim</Link>
             </Button>
             <Button asChild variant="ghost" className="text-pink-800 hover:text-pink-900 hover:bg-pink-300/50">
-              <Link href="/redes">Redes Sociais</Link>
+              <Link href="/pages/social">Redes Sociais</Link>
             </Button>
             <Button asChild variant="ghost" className="text-pink-800 hover:text-pink-900 hover:bg-pink-300/50">
               <Link href="#pecas">Peças</Link>
@@ -41,7 +43,7 @@ export default function Layout({ children }: LayoutProps) {
           </nav>
 
           {/* Botão à direita */}
-          <div className="flex-shrink-0" style={{ fontFamily: "Roboto, sans-serif" }}>
+          <div className="flex-shrink-0 ml-auto" style={{ fontFamily: "Roboto, sans-serif" }}>
             <Button asChild className="bg-pink-700 hover:bg-pink-800 text-white rounded-full px-6">
               <a href="https://wa.me/5555996991914" target="_blank" rel="noopener noreferrer">
                 Agendar
@@ -53,7 +55,6 @@ export default function Layout({ children }: LayoutProps) {
 
       {/* Conteúdo principal */}
       <main className="flex-1 container mx-auto p-4 pt-28">
-        {/* pt-28 para compensar o header fixo */}
         {children}
       </main>
 
