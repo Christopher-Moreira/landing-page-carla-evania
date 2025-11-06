@@ -7,6 +7,7 @@ import { Scissors, Shirt, Sparkles, WandSparkles } from "lucide-react";
 import Layout from "@/components/layouts/Layout";
 import "@fontsource/roboto";
 import "@fontsource/source-code-pro"
+import { Analytics } from "@vercel/analytics/next"
 
 export default function LandingPage() {
   useEffect(() => {
@@ -47,6 +48,8 @@ export default function LandingPage() {
           ))}
         </div>
       </section>
+      <Analytics />
     </Layout>
+    
   );
 }
